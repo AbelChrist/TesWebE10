@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+header {
+  height: 100px;
+  background-color: #000000;
+  height: 100px;
+  width: auto;
+  background-size: cover;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo {
+  line-height: 100px;
+  float: left;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.menu {
+  float: right;
+  line-height: 100px;
+}
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn {
+  float: right;
+}
+.show-menu-btn i {
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  color: #3498db;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  margin: 50px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+a.btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 27px;
+}
+.join {
+  background-color: orange;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* .content {
+  padding: 0 20px;
+}
+.content img {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p {
+  text-align: justify;
+} */
+
+@media screen and (max-width: 800px) {
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 85%;
+    height: 100%;
+    background: #000000;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu {
+    right: 0;
+  }
+}
