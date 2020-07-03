@@ -1,170 +1,177 @@
-    /*Responsive Tablets*/
+/*Responsive Tablets*/
 @media screen and (max-width: 1000px) {
     /*Top Wrapper and Header*/
-  .top-wrapper {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    .top-wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-  .show-menu-btn,
-  .hide-menu-btn {
-    display: block;
-  }
-  .menu {
-    position: fixed;
-    width: 85%;
-    height: 100%;
-    background: #000000;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-    z-index: 1;
-  }
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-  .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  #chk:checked ~ .menu {
-    right: 0;
-  }
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 85%;
+        height: 100%;
+        background: #000000;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 1;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu {
+        right: 0;
+    }
     /*End Header Section*/
 
-  /*Main Content Responsive Tablet*/
-  .main-content-container {
-    flex-direction: column;
-  }
+    /*Main Content Responsive Tablet*/
+    .main-content-container {
+        flex-direction: column;
+    }
 
-  .main-content-about-txt {
-    width: 100%;
-    text-align: justify;
-  }
-  
-  .main-content-about-img{
-    margin-top: 20px;
-    width: 100%;
-  }
+    .main-content-about-txt {
+        width: 100%;
+        text-align: justify;
+    }
 
-  .main-content-about-img img{
-    width: 100%;
-  }
+    .main-content-about-img {
+        margin-top: 20px;
+        width: 100%;
+    }
 
-  .navigasinext {
-    margin-top: 70px;
-  }
+    .main-content-about-img img {
+        width: 100%;
+    }
 
-  .main-service-content-wrapper{
-    flex-direction: column;
-  }
+    .navigasinext {
+        margin-top: 70px;
+    }
 
-  .main-service-content {
-    width: 100%;
-  }
+    .main-service-content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-service-content {
+        width: 100%;
+    }
     /*End Main Content*/
-
-  /*Service Section Responsive Tablet*/
-  .services h2 {
-      font-size: 20px;
-      margin-bottom: 30px;
+    /*Main Pricing Table Responsive*/
+    .pricing-card{
+        flex: 50%;
+    }
+    /*Service Section Responsive Tablet*/
+    .services h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
     }
 
     .full-text {
-      display: none;
+        display: none;
     }
 
     .short-text {
-      display: block;
+        display: block;
     }
 
     .service {
-      width: 50%;
+        width: 50%;
     }
 
     .service:last-child {
-      width: 50%;
-      margin: 30px auto 0 auto;
+        width: 50%;
+        margin: 30px auto 0 auto;
     }
 
     .service .fab,
     .service .fas {
-      font-size: 50px;
-      margin-bottom: 10px;
+        font-size: 50px;
+        margin-bottom: 10px;
     }
 
     .service h3 {
-      font-size: 18px;
+        font-size: 18px;
     }
 
     .service p {
-      font-size: 14px;
-      letter-spacing: 1px;
-      line-height: 18px;
-      text-align: justify;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        text-align: justify;
     }
-      /*End Service Section*/
+    /*End Service Section*/
 
-      /*Contact Form Section Responsive Tablets*/
-    input,textarea{
-        width: 50%;
+    /*Contact Form Section Responsive Tablets*/
+    input,
+    textarea {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         font-size: 0.8em;
     }
-    .contact-form{
+    .contact-form {
         width: 50%;
-        margin: 60px 120px;
+        margin: 30px auto;
     }
-    .contact-submit{
+
+    .contact-submit {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
-      /*End Contact Form Section*/
+    /*End Contact Form Section*/
 
     /*Footer Section Responsive Tablets*/
-    footer{
-    width: 100%;
-    padding-left: 0;
-    margin-right: auto;
-    margin-right: auto;
+    footer {
+        width: 100%;
+        padding-left: 0;
+        margin-right: auto;
+        margin-right: auto;
     }
-    h4{
+    h4 {
         text-align: left;
         padding-left: 10px;
     }
-    .footer-box{
+    .footer-box {
         width: 50%;
         display: inline-block;
         padding-left: 3px;
         padding-right: 3px;
     }
-    .copy-container{
+    .copy-container {
         width: 100%;
         margin-right: auto;
-        display:flex;
+        display: flex;
         height: auto;
-        
     }
 
-    .footer-box{
+    .footer-box {
         margin-left: auto;
         margin-right: auto;
-        
     }
-  /*End Footer Section*/
+
+    .footer-social a{
+        padding: 10px
+    }
+    /*End Footer Section*/
 }
 
 /*Responsive Smartphones */
 @media all and (max-width: 670px) {
-
     /*Service Section Responsif Smartphones*/
+
     .services h2 {
         font-size: 18px;
     }
@@ -195,67 +202,72 @@
         text-align: center;
         margin-bottom: 15px;
     }
-      /*End Service Section*/
-    
+    /*End Service Section*/
+
     /*Contact Form Responsive Smartphones*/
-    input,textarea{
+    input,
+    textarea {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    .contact-submit{
+    .contact-submit {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .contact-form{
+    .contact-form {
         text-align: center;
-        margin-left: 15%;
+        /* margin-left: 15%; */
         margin-right: auto;
     }
-    .copy-container{
-    width: 100%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+
+    .copy-container {
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-      /*End Contact Form Section*/
+    /*End Contact Form Section*/
 
     /*Footer Sectin Responsive Smartphones*/
-    footer{
-    width:100%;
-      
+    footer {
+        width: 100%;
     }
-    h4{
-    width:100%;
-    padding-bottom: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .footer-list h4{
-       text-align: center;
-       margin-left: auto;
-       margin-right: auto;
-   }
-   li a{
-       text-align: center;
-   }
-   .footer-box{
-       margin-left: auto;
-       margin-right: auto;
-       margin-bottom: 30px;
-       padding-top: 50px;
-   }
-   .copyright{
-    color:white;
-    font-size: 12px;
-    text-align: left;
-    padding-left:30%;
-    background-color: #03071e;
-}
-  /*End Footer Section*/
-}
+    h4 {
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-list h4 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li a {
+        text-align: center;
+    }
+    .footer-box {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding-top: 50px;
+    }
+    
+    .footer-social a{
+        padding: 10px;
+    }
 
+    .copyright {
+        color: white;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 20%;
+        background-color: #03071e;
+    }
+    /*End Footer Section*/
+}
